@@ -1,9 +1,8 @@
 window.addEventListener("load", function() {
     fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
         response.json().then(function(json) {
-            // console.log(json);
+
             const astronautList = document.getElementById("container");
-            // let index = 0;
             for(let i=0; i<json.length; i++){
                 astronautList.innerHTML += `
                     <div class='astronaut'>
@@ -19,7 +18,6 @@ window.addEventListener("load", function() {
                     </div>    
                 `;
             };
-        //index = (index + 1) % json.length; 
         });
     });
 });
