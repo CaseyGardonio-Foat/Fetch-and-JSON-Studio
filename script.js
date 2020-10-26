@@ -17,6 +17,10 @@ window.addEventListener("load", function() {
                         <img class='avatar' src=${json[i].picture}></img>
                     </div>    
                 `;
+                // if(json[i].active) {
+                //     <li id='greenText'>Active: ${json[i].active}</li>
+
+                // }
             };
         });
     });
